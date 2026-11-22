@@ -1,0 +1,33 @@
+OHGS v44 — DAILY FLYERS AND COMPACT BATCHING PLANT
+
+This update contains BOTH new OHGS flyers and all earlier products, generator flyers, videos, language and theme updates.
+
+WHAT CUSTOMERS SEE
+- Today at OHGS appears after the introduction on all 40 public pages.
+- The new Friday greeting appears on Fridays in Tanzania (Africa/Dar_es_Salaam, UTC+3).
+- The batching plant flyer is featured on other days. Its product page and listing remain available every day.
+- The feature changes at Tanzania midnight and refreshes when a visitor returns to the page.
+- Visitors can tap the artwork or Open full flyer to see the complete image.
+- The plant details are readable website text in English and Kiswahili, with a product-specific WhatsApp enquiry.
+
+UPLOAD THIS VERSION
+1. In Vercel, open the project whose Domains section contains your LIVE website address.
+2. Open its Settings > Git and follow the connected GitHub repository link.
+3. Extract OHGS_GITHUB_UPLOAD_READY.zip.
+4. With GitHub Desktop, clone that repository, copy ALL extracted files into its folder, Commit and Push. Keep index.html and package.json at the repository root. Include the COMPLETE media folder, especially media/flyers.
+   If using GitHub's website, upload batches of no more than 100 files while preserving every folder path. Upload the extracted files, not the ZIP.
+5. Vercel settings: Framework Preset Other; Root Directory ./; Build Command npm run build; Output Directory dist.
+6. Wait for a successful production deployment. When using Redeploy for this update, turn off Use existing Build Cache.
+7. Open /version-check.txt on the LIVE domain. It must show v44-daily-flyers.
+8. Open /deploy-test and press Check deployed files. All three release values should match v44-daily-flyers, and New flyer files should show 10 / 10 available.
+9. On Home, tap Today's highlight. On a Friday, expect the Friday greeting; on other days, expect the plant. In Products, search for batching or zege and open the new plant page.
+10. Check the flyer in portrait and landscape, tap Open full flyer, and switch between light/dark and English/Kiswahili.
+
+A successful deployment to a different project will not change your existing domain. Check the connected repository, production branch and project domain before uploading again.
+
+For a new project, follow DEPLOY_TO_NEW_VERCEL.txt. A Vercel project name must use lowercase, for example ohgs-hardware-new. Test its temporary address before moving the domain.
+
+PREVIEW ON YOUR COMPUTER
+Open a terminal in the extracted website folder. Run npm ci, then npm run dev. Open the Local URL it prints. Keep the terminal open while testing.
+
+Read HOW_DAILY_FLYERS_WORK.txt for the weekly schedule and DAILY_FLYERS_QA.txt for the checks completed for this release.
