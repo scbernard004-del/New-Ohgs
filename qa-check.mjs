@@ -3,7 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 
 const root = process.cwd();
-const release = 'v44-daily-flyers';
+const release = 'v45-inline-logo';
 const phone = '255689528193';
 const htmlFiles = fs.readdirSync(root).filter((name) => name.endsWith('.html')).sort();
 const publicFiles = htmlFiles.filter((name) => name !== 'deploy-test.html');

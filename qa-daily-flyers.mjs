@@ -38,7 +38,7 @@ for (const event of ['ohgs:languagechange', 'pageshow', 'visibilitychange']) ass
 for (const name of fs.readdirSync('.').filter(name => name.endsWith('.html') && name !== 'deploy-test.html')) {
   const html = fs.readFileSync(name, 'utf8');
   assert.equal((html.match(/data-daily-flyer(?:\s|>)/g) || []).length, 1, `${name}: daily feature count`);
-  assert.equal((html.match(/ohgs-daily-flyers\.js\?v=v44-daily-flyers/g) || []).length, 1, `${name}: current daily controller`);
+  assert.equal((html.match(/ohgs-daily-flyers\.js\?v=v45-inline-logo/g) || []).length, 1, `${name}: current daily controller`);
   assert.ok(html.includes('template data-friday-content'), `${name}: Friday stays inert until its day`);
   assert.ok(html.includes('data-active-flyer="plant"'), `${name}: evergreen fallback`);
   for (const list of html.matchAll(/<source\b[^>]*srcset="([^"]+)"/g)) {

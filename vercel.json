@@ -9,7 +9,7 @@
       "headers": [
         {
           "key": "X-OHGS-Release",
-          "value": "v44-daily-flyers"
+          "value": "v45-inline-logo"
         },
         {
           "key": "X-Content-Type-Options",

@@ -33,4 +33,4 @@ if (fs.existsSync(mediaSource)) {
   }
 }
 
-console.log('OHGS v44 static deployment created with Tanzania weekday artwork, batching plant details and all earlier media.');
+console.log('OHGS v45 static deployment created with self-contained logos, Tanzania daily flyers and all earlier media.');

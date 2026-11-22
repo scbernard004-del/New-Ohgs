@@ -1,6 +1,6 @@
-OHGS v44 — DAILY FLYERS AND COMPACT BATCHING PLANT
+OHGS v45 — LOGO FIX + DAILY FLYERS AND COMPACT BATCHING PLANT
 
-This update contains BOTH new OHGS flyers and all earlier products, generator flyers, videos, language and theme updates.
+This update fixes the missing header logo by keeping the vector artwork inside every page. It also contains both new OHGS flyers and all earlier products, generator flyers, videos, language and theme updates. For a small update to an existing v44 site, read LOGO_FIX_README.txt.
 
 WHAT CUSTOMERS SEE
 - Today at OHGS appears after the introduction on all 40 public pages.
@@ -18,8 +18,8 @@ UPLOAD THIS VERSION
    If using GitHub's website, upload batches of no more than 100 files while preserving every folder path. Upload the extracted files, not the ZIP.
 5. Vercel settings: Framework Preset Other; Root Directory ./; Build Command npm run build; Output Directory dist.
 6. Wait for a successful production deployment. When using Redeploy for this update, turn off Use existing Build Cache.
-7. Open /version-check.txt on the LIVE domain. It must show v44-daily-flyers.
-8. Open /deploy-test and press Check deployed files. All three release values should match v44-daily-flyers, and New flyer files should show 10 / 10 available.
+7. Open /version-check.txt on the LIVE domain. It must show v45-inline-logo.
+8. Open /deploy-test and press Check deployed files. All three release values should match v45-inline-logo, and New flyer files should show 10 / 10 available.
 9. On Home, tap Today's highlight. On a Friday, expect the Friday greeting; on other days, expect the plant. In Products, search for batching or zege and open the new plant page.
 10. Check the flyer in portrait and landscape, tap Open full flyer, and switch between light/dark and English/Kiswahili.
 

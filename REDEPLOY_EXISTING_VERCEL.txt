@@ -13,7 +13,7 @@ OHGS WEBSITE — UPDATE AN EXISTING GITHUB AND VERCEL PROJECT
    Output Directory: dist
 8. If an automatic deployment does not start, open Deployments, select the latest production deployment and choose Redeploy.
 9. Turn off Use existing Build Cache when redeploying this update.
-10. Open /version-check.txt on the live domain and confirm v44-daily-flyers.
+10. Open /version-check.txt on the live domain and confirm v45-inline-logo.
 11. On the Home page, change the language to Kiswahili. Page content and the browser-tab title must change. Home must contain seven videos and Gallery eleven. The new 41-second Arusha showroom tour appears in both.
 12. On a phone and computer, test both modes. In light mode the OHGS wordmark must be solid dark blue and the Home construction campaign must show dark text on its pale background. The logo, menu lines, headings, paragraphs and buttons must remain clear without horizontal scrolling. The icon shows the current mode: moon is dark and sun is light.
 13. Scroll down and back to the top. Confirm that the header shrinks and expands, and that the mobile menu opens below it in both states. Product image frames and Home video card edges should align.
@@ -23,4 +23,4 @@ The existing custom domain and environment variables remain attached when you up
 
 After deployment, follow GOOGLE_SEARCH_SETUP.txt to verify the domain and submit the sitemap to Google.
 
-Final check: open /deploy-test on the live domain and press Check deployed files. All three versions should be v44-daily-flyers. Then test Home video playback.
+Final check: open /deploy-test on the live domain and press Check deployed files. All three versions should be v45-inline-logo. Then test Home video playback.

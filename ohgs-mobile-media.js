@@ -2,7 +2,7 @@
   'use strict';
   if(window.OHGSMediaReady)return;
   window.OHGSMediaReady=true;
-  document.documentElement.dataset.ohgsMediaRelease='v44-daily-flyers';
+  document.documentElement.dataset.ohgsMediaRelease='v45-inline-logo';
   var videos=Array.prototype.slice.call(document.querySelectorAll('video[data-video-src]'));
   function isSw(){return document.documentElement.lang==='sw'}
   function orderLanguage(){

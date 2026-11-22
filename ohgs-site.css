@@ -1,4 +1,4 @@
-/* OHGS v44 — quick page readiness and loading feedback beside each resource. */
+/* OHGS v45 — quick page readiness and loading feedback beside each resource. */
 :root{--bg:#07111f;--bg2:#0b1726;--card:#0d1c2b;--text:#f7fbff;--muted:#bdcada;--line:rgba(159,231,255,.18);--brand:#008abe;--brand-ink:#85dbff;--green:#087b40;--shadow:0 12px 32px rgba(0,0,0,.18);--header:76px;--header-compact:64px;--radius:20px}
 html[data-theme="light"]{--bg:#f5f9fd;--bg2:#fff;--card:#fff;--text:#0b1726;--muted:#475569;--line:rgba(8,66,98,.16);--shadow:0 22px 54px rgba(8,38,61,.12);--brand-ink:#075b84}
 *{box-sizing:border-box}
@@ -31,8 +31,8 @@ p{margin:0 0 16px;color:var(--muted);overflow-wrap:anywhere}
 .site-header.scrolled{box-shadow:var(--shadow)}
 .site-header.ohgs-header-compact{height:var(--header-compact);padding-block:8px}
 .brand{display:flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;flex:none}
-.brand img{width:44px;height:44px;object-fit:contain;border-radius:50%;background:#fff;transition:width .2s ease,height .2s ease}
-.site-header.ohgs-header-compact .brand img{width:36px;height:36px;animation:ohgs-brand-settle .4s ease-out}
+.brand img,.brand .ohgs-logo{width:44px;height:44px;object-fit:contain;border-radius:50%;background:#fff;transition:width .2s ease,height .2s ease}
+.site-header.ohgs-header-compact .brand img,.site-header.ohgs-header-compact .brand .ohgs-logo{width:36px;height:36px;animation:ohgs-brand-settle .4s ease-out}
 @keyframes ohgs-brand-settle{from{transform:translateY(-2px) rotate(-5deg)}to{transform:translateY(0) rotate(0)}}
 .brand-copy{display:flex;flex-direction:column}
 .brand-copy strong{color:var(--text);font-size:25px;line-height:1;letter-spacing:.1em;font-weight:800;transition:font-size .2s ease}
@@ -229,7 +229,7 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
 .footer{padding:42px 0 24px;border-top:1px solid var(--line);background:var(--bg2)}
 .footer-grid{display:grid;grid-template-columns:1.3fr .7fr 1fr;gap:35px}
 .footer-brand{display:flex;gap:10px;align-items:center;margin-bottom:15px}
-.footer-brand img{width:42px;height:42px;border-radius:50%;background:#fff}
+.footer-brand img,.footer-brand .ohgs-logo{width:42px;height:42px;border-radius:50%;background:#fff}
 .footer-brand strong,.footer-brand small{display:block}
 .footer-brand strong{font-size:17px;color:var(--text)}
 .footer-brand small{font-size:12px;color:var(--muted);line-height:1.5}
@@ -287,7 +287,7 @@ main h2.is-in-view{animation:ohgs-heading-entry .55s ease-out}
 @media(max-width:1199px){
   :root{--header:68px;--header-compact:60px}
   .site-header{padding:10px 18px;gap:12px}
-  .brand img{width:38px;height:38px}
+  .brand img,.brand .ohgs-logo{width:38px;height:38px}
   .brand-copy strong{font-size:22px}
   .nav-links{position:fixed;inset:calc(var(--header) + 8px) 14px auto;display:none;margin:0;padding:12px;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--shadow);max-height:calc(100dvh - var(--header) - 26px);overflow-y:auto}
   .nav-links.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
@@ -327,8 +327,8 @@ main h2.is-in-view{animation:ohgs-heading-entry .55s ease-out}
   body{padding-bottom:calc(83px + env(safe-area-inset-bottom,0px))}
   .site-header{padding:10px 12px;gap:10px}
   .brand{gap:7px}
-  .brand img{width:34px;height:34px}
-  .site-header.ohgs-header-compact .brand img{width:30px;height:30px}
+  .brand img,.brand .ohgs-logo{width:34px;height:34px}
+  .site-header.ohgs-header-compact .brand img,.site-header.ohgs-header-compact .brand .ohgs-logo{width:30px;height:30px}
   .site-header.ohgs-header-compact .brand-copy strong{font-size:18px}
   .brand-copy strong{font-size:20px;letter-spacing:.08em}
   .brand-copy small{font-size:7px;letter-spacing:.17em}
@@ -437,7 +437,7 @@ main h2.is-in-view{animation:ohgs-heading-entry .55s ease-out}
   .site-header{gap:7px;padding-inline:10px}
   .brand-copy strong{font-size:18px}
   .brand-copy small{font-size:7px;letter-spacing:.1em}
-  .brand img{width:32px;height:32px}
+  .brand img,.brand .ohgs-logo{width:32px;height:32px}
   .home-video-stage-copy .actions,.card-actions{grid-template-columns:1fr}
   .home-video-clips{height:330px}
   .home-video-preview figcaption{font-size:11px}
@@ -467,7 +467,7 @@ main h2.is-in-view{animation:ohgs-heading-entry .55s ease-out}
 .spotlight-intro{max-width:48ch;margin:0}
 .spotlight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:22px}
 .spotlight-brand{display:flex;align-items:center;gap:8px;min-width:0;min-height:48px;padding:8px 12px;color:var(--text);border-bottom:1px solid var(--line)}
-.spotlight-brand img{width:27px;height:27px;border-radius:50%;background:#fff;flex:none}
+.spotlight-brand img,.spotlight-brand .ohgs-logo{width:27px;height:27px;border-radius:50%;background:#fff;flex:none}
 .spotlight-brand>span:first-of-type{font-size:11px;font-weight:850;letter-spacing:.13em}
 .spotlight-tag{margin-left:auto;text-align:right;font-size:11px;line-height:1.3;color:var(--muted);font-weight:700}
 .spotlight-photo{aspect-ratio:4/3;background:#eef4f8}
@@ -506,7 +506,7 @@ main h2.is-in-view{animation:ohgs-heading-entry .55s ease-out}
   .home-video-stage-copy .explore-cue{margin-top:10px}
   .spotlight-grid{gap:10px}
   .spotlight-brand{min-height:42px;padding:7px;gap:4px}
-  .spotlight-brand img{width:22px;height:22px}
+  .spotlight-brand img,.spotlight-brand .ohgs-logo{width:22px;height:22px}
   .spotlight-tag{font-size:10px;max-width:9ch}
   .spotlight-card .card-body{padding:11px}
   .spotlight-card h3{font-size:17px}
@@ -620,3 +620,6 @@ main h2.is-in-view{animation:ohgs-heading-entry .55s ease-out}
  .daily-highlight--compact .daily-artwork{width:100%;max-width:300px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* The brand artwork is part of the page, so it cannot become a broken external image. */
+.ohgs-logo{display:block;flex-shrink:0;overflow:visible}

@@ -5,7 +5,7 @@
   var DAY = 86400000;
   var EAT = 10800000;
   var timer;
-  document.documentElement.dataset.ohgsDailyRelease = 'v44-daily-flyers';
+  document.documentElement.dataset.ohgsDailyRelease = 'v45-inline-logo';
   function selectionForDate(value) {
     var date = value instanceof Date ? value : new Date(value);
     if (!Number.isFinite(date.getTime())) throw new RangeError('A valid date is required.');

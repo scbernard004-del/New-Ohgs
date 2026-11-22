@@ -8,7 +8,7 @@ OHGS WEBSITE — NEW VERCEL PROJECT AND DOMAIN
 6. Set Build Command to: npm run build
    Set Output Directory to: dist
    These settings are also included in vercel.json so Vercel publishes the checked website files, not an older build.
-7. Deploy without a previous build cache. Open /version-check.txt and confirm it says v44-daily-flyers.
+7. Deploy without a previous build cache. Open /version-check.txt and confirm it says v45-inline-logo.
 8. First confirm the NEW project's temporary .vercel.app address is Ready and working.
 9. In Vercel open Domains, use the menu beside your custom domain, choose Move, and select the new project. If Move is unavailable, remove the domain from the old project and immediately add it under the new project's Settings > Domains.
 10. At your domain provider, enter exactly the DNS records Vercel displays. Do not guess the records. If the domain already points to Vercel, DNS may not need to change.
@@ -17,7 +17,7 @@ OHGS WEBSITE — NEW VERCEL PROJECT AND DOMAIN
 
 LIVE VERSION CHECK
 Your deployed-domain/version-check.txt must show:
-OHGS RELEASE v44-daily-flyers
+OHGS RELEASE v45-inline-logo
 
 After deployment, follow GOOGLE_SEARCH_SETUP.txt to verify the domain and submit the sitemap to Google.
 
